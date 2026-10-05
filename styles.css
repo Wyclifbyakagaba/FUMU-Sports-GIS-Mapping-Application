@@ -1,0 +1,130 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #17202a;
+}
+
+/* Header */
+header {
+    background-color: #1f6f4a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Main content */
+main {
+    width: 94%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+/* Map controls */
+.controls {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.controls label {
+    font-weight: bold;
+}
+
+.controls select {
+    padding: 9px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.controls button {
+    padding: 9px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e88e5;
+    color: white;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #1565c0;
+}
+
+#markerCount {
+    font-weight: bold;
+}
+
+/* Map */
+#map {
+    width: 100%;
+    height: 600px;
+
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Instructions */
+.instructions {
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.instructions h2 {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #0d3d27;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile screen */
+@media (max-width: 700px) {
+
+    #map {
+        height: 450px;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .controls select,
+    .controls button {
+        width: 100%;
+    }
+}
+
+t

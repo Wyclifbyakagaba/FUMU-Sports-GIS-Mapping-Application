@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FUMU Sports GIS Mapping</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>FUMU Sports GIS Mapping Application</h1>
+        <p>Interactive map of community sports locations in Uganda</p>
+    </header>
+``
+    <main>
+
+        <section class="controls">
+            <label for="sportFilter">Filter by sport:</label>
+
+            <select id="sportFilter">
+                <option value="All">All Sports</option>
+            </select>
+
+            <button id="resetButton">Reset Map</button>
+
+            <span id="markerCount"></span>
+        </section>
+
+        <section id="map"></section>
+
+        <section class="instructions">
+            <h2>How to Use the Map</h2>
+
+            <ol>
+                <li>Select a sport from the filter.</li>
+                <li>Click a marker on the map.</li>
+                <li>Read the information displayed in the popup.</li>
+                <li>Click Reset Map to display all locations.</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>FUMU Sports GIS Mapping Application - CSE310 Module 3</p>
+    </footer>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+    <!-- Project JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
