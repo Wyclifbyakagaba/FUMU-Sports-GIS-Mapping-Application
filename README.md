@@ -6,6 +6,12 @@ The **FUMU Sports GIS Mapping Application** is an interactive web-based Geograph
 
 The application displays sports locations on an interactive map of Uganda. Users can click map markers to view information about sports locations and use a filter to display locations for a specific sport.
 
+## Live Website
+
+The application is published using GitHub Pages and can be accessed online.
+
+**Live Website:** [FUMU Sports GIS Mapping](https://wyclifbyakagaba.github.io/FUMU-Sports-GIS-Mapping-Application/)
+
 ## Purpose
 
 The purpose of this application is to demonstrate how GIS technology can be used to organize and visualize sports-related location data.
@@ -20,7 +26,7 @@ The application helps users:
 
 ## GIS Features
 
-## 1. Interactive Map
+### 1. Interactive Map
 
 The application uses **Leaflet** to create an interactive map.
 
@@ -31,7 +37,7 @@ Users can:
 * Select individual locations.
 * View location information.
 
-## 2. Map Markers
+### 2. Map Markers
 
 The application contains **24 sports location markers**.
 
@@ -44,7 +50,7 @@ The markers represent four sports:
 
 The application therefore meets the requirement for at least 20 map markers.
 
-## 3. Marker Popups
+### 3. Marker Popups
 
 When a user clicks a marker, a popup displays useful information including:
 
@@ -54,7 +60,7 @@ When a user clicks a marker, a popup displays useful information including:
 * Area
 * Description of the location
 
-## 4. Sport Filter
+### 4. Sport Filter
 
 The application includes a filter that allows users to select:
 
@@ -66,13 +72,13 @@ The application includes a filter that allows users to select:
 
 When a sport is selected, only the matching locations are displayed on the map.
 
-## 5. Reset Map
+### 5. Reset Map
 
-The Reset Map button returns the application to the original view and displays all sports locations again.
+The **Reset Map** button returns the application to the original map view and displays all sports locations again.
 
-## 6. Marker Counter
+### 6. Marker Counter
 
-The application displays the number of locations currently visible on the map.
+The application displays the number of locations currently visible on the map. The counter changes automatically when the user filters the locations.
 
 ## Technologies Used
 
@@ -102,7 +108,7 @@ FUMU-Sports-GIS-Mapping-Application/
 
 ## File Descriptions
 
-## `index.html`
+### `index.html`
 
 Contains the structure of the web application, including:
 
@@ -113,7 +119,7 @@ Contains the structure of the web application, including:
 * Instructions
 * Leaflet library references
 
-## `styles.css`
+### `styles.css`
 
 Controls the appearance of the application, including:
 
@@ -122,9 +128,9 @@ Controls the appearance of the application, including:
 * Map
 * Instructions
 * Footer
-* Mobile layout
+* Responsive mobile layout
 
-## `app.js`
+### `app.js`
 
 Contains the main GIS functionality.
 
@@ -139,7 +145,7 @@ It:
 * Counts visible locations.
 * Resets the map.
 
-## `data/sports_locations.csv`
+### `data/sports_locations.csv`
 
 Contains the sports location dataset with fields for:
 
@@ -153,7 +159,7 @@ Contains the sports location dataset with fields for:
 
 ## How to Run the Application
 
-## Option 1: VS Code Live Server
+### Option 1: VS Code Live Server
 
 1. Open the project folder in VS Code.
 2. Open `index.html`.
@@ -162,11 +168,13 @@ Contains the sports location dataset with fields for:
 5. Select **Open with Live Server**.
 6. The application will open in a web browser.
 
-## Option 2: Open in a Browser
+### Option 2: GitHub Pages
 
-The `index.html` file can also be opened directly in a modern web browser.
+The application can also be accessed through the published GitHub Pages website:
 
-An internet connection is recommended because Leaflet and OpenStreetMap resources are loaded from the internet.
+**[FUMU Sports GIS Mapping](https://wyclifbyakagaba.github.io/FUMU-Sports-GIS-Mapping-Application/)**
+
+An internet connection is required because Leaflet and OpenStreetMap resources are loaded from the internet.
 
 ## How to Use the Application
 
@@ -176,11 +184,12 @@ An internet connection is recommended because Leaflet and OpenStreetMap resource
 4. Read the information in the popup.
 5. Select a sport from the filter.
 6. Observe that only locations for the selected sport remain visible.
-7. Click **Reset Map** to display all locations again.
+7. Check the marker counter to see how many locations are displayed.
+8. Click **Reset Map** to display all locations again.
 
 ## Data
 
-The project contains 24 demonstration sports locations distributed across Uganda.
+The project contains **24 demonstration sports locations** distributed across Uganda.
 
 The dataset includes four sports:
 
@@ -193,6 +202,20 @@ The dataset includes four sports:
 | **Total**  |              **24** |
 
 The coordinates are included to demonstrate the GIS mapping functionality. Any location that is presented as a real-world sports facility should be verified before the application is used outside the classroom.
+
+## Testing
+
+The application should be tested to confirm that:
+
+* The map loads correctly.
+* All 24 markers appear.
+* Clicking a marker opens a popup.
+* The popup displays the correct information.
+* The sport filter works correctly.
+* The marker count changes when filtering.
+* The Reset Map button displays all locations again.
+* The application works on different screen sizes.
+* The published GitHub Pages website loads correctly.
 
 ## Learning Outcomes
 
@@ -207,20 +230,8 @@ Through this project, I practiced:
 * Using JavaScript functions.
 * Working with an external mapping library.
 * Testing an interactive web application.
+* Publishing a web application using GitHub Pages.
 * Documenting a software project.
-
-## Testing
-
-The application should be tested to confirm that:
-
-* The map loads correctly.
-* All 24 markers appear.
-* Clicking a marker opens a popup.
-* The popup displays the correct information.
-* The sport filter works.
-* The marker count changes when filtering.
-* The Reset Map button displays all locations.
-* The application works on different screen sizes.
 
 ## Video Demonstration
 
@@ -238,9 +249,9 @@ The demonstration video should show:
 
 ## GitHub Repository
 
-**GitHub Repository:** ADD-YOUR-GITHUB-REPOSITORY-LINK-HERE
+**GitHub Repository:** [FUMU Sports GIS Mapping Application](https://github.com/Wyclifbyakagaba/FUMU-Sports-GIS-Mapping-Application)
 
-The repository should be public so the instructor can review the project files.
+The repository is public so the instructor can review the project files and source code.
 
 ## Author
 
